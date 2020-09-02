@@ -1,0 +1,18 @@
+{
+  "name": "dailys",
+  "version": "1.0.0",
+  "description": "Farm fresh daily standups delivered to your editor",
+  "main": "index.js",
+  "scripts": {
+    "standup": "ts-node --transpile-only ./standup.ts",
+    "standup-edit": "yarn run --silent standup | xargs $EDITOR"
+  },
+  "author": "James Lefrere",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "date-fns": "^2.16.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
